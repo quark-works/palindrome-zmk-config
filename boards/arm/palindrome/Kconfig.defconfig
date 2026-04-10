@@ -1,0 +1,12 @@
+# Copyright (c) 2026 Brandon Beltran
+# SPDX-License-Identifier: MIT
+
+if BOARD_PALINDROME
+
+config ZMK_KEYBOARD_NAME
+    default "Palindrome"
+
+config BT_CTLR
+    default BT
+
+endif # BOARD_PALINDROME

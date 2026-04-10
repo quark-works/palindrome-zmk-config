@@ -1,0 +1,11 @@
+file_format: "1"
+id: palindrome
+name: palindrome
+type: board
+arch: arm
+outputs:
+  - usb
+  - ble
+url: https://quark.works/
+features:
+  - keys
