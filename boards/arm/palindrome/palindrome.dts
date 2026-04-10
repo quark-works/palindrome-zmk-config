@@ -9,7 +9,7 @@
 #include <nordic/nrf52840_qiaa.dtsi>
 
 #include "palindrome-transforms.dtsi"
-#include "palindrome-layouts.dtsi"
+#include "palindrome-layout.dtsi"
 
 / {
     model = "palindrome";
