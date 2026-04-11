@@ -3,13 +3,23 @@
 
 if BOARD_PALINDROME_LEFT
 
+config BOARD
+    default "palindrome_left"
+
 config ZMK_KEYBOARD_NAME
     default "Palindrome"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
-endif
+endif # left
+
+if BOARD_PALINDROME_RIGHT
+
+config BOARD
+    default "palindrome_right"
+
+endif # right
 
 if USB
 
