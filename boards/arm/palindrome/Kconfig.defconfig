@@ -11,6 +11,19 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
+if USB
+
+config USB_NRFX
+    default y
+
+config USB_DEVICE_STACK
+    default y
+
+endif # USB
+
+config BT_CTLR
+    default BT
+
 if BOARD_PALINDROME_LEFT || BOARD_PALINDROME_RIGHT
 
 config ZMK_SPLIT
