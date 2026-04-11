@@ -1,12 +1,18 @@
 # Copyright (c) 2026 Brandon Beltran
 # SPDX-License-Identifier: MIT
 
-if BOARD_PALINDROME
+if BOARD_PALINDROME_LEFT
 
 config ZMK_KEYBOARD_NAME
     default "Palindrome"
 
-config BT_CTLR
-    default BT
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
 
-endif # BOARD_PALINDROME
+endif
+
+if BOARD_PALINDROME_LEFT || BOARD_PALINDROME_RIGHT
+
+config ZMK_SPLIT
+    default y
+endif
