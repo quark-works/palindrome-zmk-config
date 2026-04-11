@@ -10,6 +10,6 @@ url: https://quark.works/
 features:
   - keys
   - studio
-sibliongs:
+siblings:
   - palindrome_left
   - palindrome_right
