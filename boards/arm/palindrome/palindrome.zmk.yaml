@@ -9,3 +9,7 @@ outputs:
 url: https://quark.works/
 features:
   - keys
+  - studio
+sibliongs:
+  - palindrome_left
+  - palindrome_right
