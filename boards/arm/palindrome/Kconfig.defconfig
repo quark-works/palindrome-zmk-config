@@ -3,9 +3,6 @@
 
 if BOARD_PALINDROME_LEFT
 
-config BOARD
-    default "palindrome_left"
-
 config ZMK_KEYBOARD_NAME
     default "Palindrome"
 
@@ -14,28 +11,23 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif # left
 
-if BOARD_PALINDROME_RIGHT
+if BOARD_PALINDROME_LEFT || BOARD_PALINDROME_RIGHT
+
 
 config BOARD
-    default "palindrome_right"
+    default "palindrome"
 
-endif # right
-
-if USB
-
-config USB_NRFX
+config ZMK_SPLIT
     default y
-
-config USB_DEVICE_STACK
-    default y
-
-endif # USB
 
 config BT_CTLR
     default BT
 
-if BOARD_PALINDROME_LEFT || BOARD_PALINDROME_RIGHT
+if USB_DEVICE_STACK
 
-config ZMK_SPLIT
+config USB_NRFX
     default y
+
+endif # USB
+
 endif
