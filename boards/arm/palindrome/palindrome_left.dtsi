@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "palindrome.dts"
+#include "palindrome.dtsi"
 
 &left_encoder {
     status = "okay";

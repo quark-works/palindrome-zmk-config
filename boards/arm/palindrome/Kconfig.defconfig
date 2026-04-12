@@ -13,7 +13,6 @@ endif # left
 
 if BOARD_PALINDROME_LEFT || BOARD_PALINDROME_RIGHT
 
-
 config BOARD
     default "palindrome"
 
